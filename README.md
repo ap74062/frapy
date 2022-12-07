@@ -1,16 +1,18 @@
-# acce-ai
-```pip install acce-ai```
+# sandpy.com cloud
+``pip install sandpy-client``
 
 ### Usage
-Before you will be able to use cloud client, you need to create account on:  acce.ai
+Before you will be able to use cloud client, you need to create account on:  sandpy.com
 
-Acceai let you run your code in very simple manner.
-You need to just decorate function that you want to execute with flask-style decorator.
-Function will be skipped by local execution but will be real-time executed on one of our servers (GPU or CPU) and result of your function will be returned back to your code.
+SandPy lets you run your code on powerfull cloud computing instances right from your code editor.
+You need to just decorate function that you want to execute with "flask-style" decorator.
+Function will be skipped by local execution but will be real-time executed on one of our servers and results of your function will be returned back to your code.
 
 ### Example
+#
+
 ```
-from acceai import Client
+from sandpy-client import Client
 client = Client(api_key, api_secret)
 
 @client.run(compute_on='GPU')
@@ -21,13 +23,13 @@ def add(a, b):
 c = test(a=10, b=20)
 ```
 ```
->>> c
+\>\>\> c
 30
 ```
 ### Limitations
-1. You need to pass serialable objects to function (int, float, str, list, tuple, set, dict, bool etc.)
-2. If you are using 3rd party packages (that can be downloaded using pip) - uou HAVE TO specify imports in decorator (imports=['pandas'])
-3. You CAN'T use anything outside of function scope aside 3rd party packages.
+1. Supported function argument types (DATAFRAME, int, float, str, list, tuple, set, dict, bool)
+2. If you are using 3rd party packages (that can be downloaded using pip) - you HAVE TO specify imports in decorator (imports=['pandas'])
+3. You CAN'T use anything outside of function scope (beside 3rd party packages).
 
 ## Documentation
 ##### api_key and api_secret: You can generate api_key and api_secret on account dashboard and you have to pass it to client while initialization.
