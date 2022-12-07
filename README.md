@@ -23,7 +23,7 @@ def add(a, b):
 c = test(a=10, b=20)
 ```
 ```
-\>\>\> c
+>>> c
 30
 ```
 ### Limitations
