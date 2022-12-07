@@ -62,7 +62,6 @@ class Client():
                                 raise Exception(body['msg'])
                             
                             elif exec_code == 0:
-                                print('X')
                                 sleep(30)
                                 
                             elif exec_code == 1:

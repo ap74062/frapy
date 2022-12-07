@@ -8,14 +8,14 @@ setup(
   author = 'Aleksander Peczot',                   # Type in your name
   author_email = 'peczot.a@gmail.com',      # Type in your E-Mail
   url = 'sandpy.com',   # Provide either the link to your github or to your website
-  download_url = 'https://github.com/user/reponame/archive/v_01.tar.gz',    # I explain this later on
+  download_url = 'https://github.com/ap74062/sandpy/archive/refs/tags/1.0.tar.gz',    # I explain this later on
   keywords = ['CLOUD', 'COMPUTING', 'CLOUDCOMPUTING'],   # Keywords that define your package best
   install_requires=[],
   classifiers=[
     'Development Status :: 3 - Alpha',      # Chose either "3 - Alpha", "4 - Beta" or "5 - Production/Stable" as the current state of your package
     'Intended Audience :: Developers',      # Define that your audience are developers
-    'System :: Distributed Computing',
-    'License :: OSI Approved :: Apache 2.0 License',   # Again, pick a license
+    'Topic :: System :: Distributed Computing',
+    'License :: OSI Approved :: Apache Software License',   # Again, pick a license
     'Programming Language :: Python :: 3.7',
     'Programming Language :: Python :: 3.8',
     'Programming Language :: Python :: 3.9',
