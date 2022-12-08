@@ -1,4 +1,4 @@
-# frapy.com cloud
+# frapy.net cloud
 ```pip install frapy```
 
 ### Usage
