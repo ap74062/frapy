@@ -9,7 +9,7 @@ setup(
   long_description=long_description,
   long_description_content_type='text/markdown',
   packages = ['frapy'],   # Chose the same as "name"
-  version = '1.0.4',      # Start with a small number and increase it with every change you make
+  version = '1.0.0',      # Start with a small number and increase it with every change you make
   license='apache-2.0',        # Chose a license from here: https://help.github.com/articles/licensing-a-repository
   description = 'Client for frapy cloud',   # Give a short description about your library
   author = 'Aleksander Peczot',                   # Type in your name
