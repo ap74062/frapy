@@ -1,10 +1,10 @@
-# sandpy.com cloud
-``pip install sandpy-client``
+# frapy.com cloud
+```pip install frapy```
 
 ### Usage
-Before you will be able to use cloud client, you need to create account on:  sandpy.com
+Before you will be able to use cloud client, you need to create account on:  frapy.net
 
-SandPy lets you run your code on powerfull cloud computing instances right from your code editor.
+FraPy lets you run your code on powerfull cloud computing instances right from your code editor.
 You need to just decorate function that you want to execute with "flask-style" decorator.
 Function will be skipped by local execution but will be real-time executed on one of our servers and results of your function will be returned back to your code.
 
@@ -12,7 +12,7 @@ Function will be skipped by local execution but will be real-time executed on on
 #
 
 ```
-from sandpy-client import Client
+from frapy import Client
 client = Client(api_key, api_secret)
 
 @client.run(compute_on='GPU')
